@@ -1,0 +1,1 @@
+# book-storage-spring-data-mongo-shell
