@@ -1,0 +1,19 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  shell:
+    interactive:
+      enabled: false
+mongock:
+  runner-type: "ApplicationRunner" # default
+  #  runner-type: "InitializingBean"
+  change-logs-scan-package:
+    - ru.agilix.bookstorage.mongock.changelog
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
