@@ -1,0 +1,15 @@
+spring:
+#  main:
+#    allow-bean-definition-overriding: true
+  data:
+    mongodb:
+      host: 104.248.47.45
+      port: 27017
+      database: bookstorage
+mongock:
+  runner-type: "InitializingBean"
+  change-logs-scan-package:
+    - ru.agilix.bookstorage.mongock.changelog
+#logging:
+#  level:
+#    root: DEBUG
